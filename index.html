@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="body">
+    <main class="main">
+        <h1>FORMULARZ</h1>
+        <form class="form" action="https://dev.cotenfrontend.pl">
+                <p>
+                    <label>
+                        Imię:
+                        <input class="form__item" id="Imię" name="Imię" placeholder="Proszę wpisać swoje imię."
+                            type="text">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Nazwisko:
+                        <input class="form__item" id="Nazwisko" name="Nazwisko"
+                            placeholder="Proszę wpisać swoje nazwisko" type="text">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Twój numer telefonu:
+                        <input class="form__item" id="Twój numer" placeholder="Proszę podaj numer telefonu"
+                            name="Twój numer" type="tel">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Twój adres e-mail:
+                        <input class="form__item" id="Twój mail" placeholder="Proszę podać adres e-mail"
+                            name="Twój mail" type="email">
+                    </label>
+                </p>
+            <fieldset class="form">
+                <legend>Adres:</legend>
+                <p>
+                    <label>
+                        Ulica:
+                        <input class="form__item" name="Nazwa ulicy" id="Nazwa ulicy"
+                            placeholder="Proszę wpisać nazwę ulicy">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Miasto:
+                        <input class="form__item" id="Nazwa miasta" name="Nazwa miasta"
+                            placeholder="Proszę wpisać nazwę miasta">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Kod pocztowy:
+                        <input class="form__item" id="Kod pocztowy" name="Kod pocztowy"
+                            placeholder="Proszę podaj kod pocztowy" pattern="[0-9]{2}-[0-9]{3}">
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                Twoje ulubione lody:
+                <p>
+                    <label>
+                        <input class="form__item" type="radio" name="Lody" value="Chocolate"> Czekoladowe
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="form__item" type="radio" name="Lody" value="Vanilla"> Waniliowe
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="form__item" type="radio" name="Lody" value="Strawberry"> Truskawkowe
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="form__item" type="radio" name="Lody" value="Pistacja"> Pistacjowe
+                    </label>
+                </p>
+            </fieldset>
+                <p>
+                    <label for="zespół">
+                        Twój ulubiony zespół:
+                    </label>
+                    <select id="Zespół" name="Zespół">
+                        <option value="zespół 1">Radiohead</option>
+                        <option value="zespół 2">Metalica</option>
+                        <option value="zespół 3">Nightwish</option>
+                        <option value="zespół 4">IronMaiden</option>
+                    </select>
+                </p>
+            <p>
+                <label>Jestem szczęśliwy
+                    <input class="form__item" id="range" name="range" type="range" min="0" max="100" step="10">
+                </label>
+            </p>
+            <p>
+                <label for="Twoja historia">Twoja historia:
+                    <textarea class="form__item" id="Twoja historia">Oto moja historia...
+                    </textarea>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input class="form__item" name="wyślij" id="wyślij" type="submit" value="wyślij">
+                </label>
+            </p>
+        </form>
+    </main>
+
+</body>
+
+</html>
